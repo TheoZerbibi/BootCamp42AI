@@ -21,5 +21,5 @@ def arg(argv):
 	return;
 
 if len(sys.argv) <= 1:
-	exit()
+	sys.exit()
 arg(sys.argv)

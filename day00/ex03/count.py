@@ -34,7 +34,7 @@ def punctuation(str):
 	listPunctuation = string.punctuation
 	for i in range(0, len(str)):
 		if str[i] in listPunctuation:
-			nbr += 1
+			nbr +=1
 	return nbr;
 
 def spaces(str):

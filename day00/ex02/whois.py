@@ -10,10 +10,10 @@ def check(argv):
 		 print("I'm Even.")
 	return;
 
-if len(sys.argv) <= 1:
-	exit()
+if len(sys.argv) == 1:
+	sys.exit();
 if len(sys.argv) >= 3 or sys.argv[1].isalpha():
 	print("ERROR")
-	exit()
+	sys.exit()
 
 check(int(sys.argv[1]))

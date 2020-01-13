@@ -6,7 +6,7 @@ class Params:
 		self.diff = diff
 		self.product = product
 		self.quotient = quotient
-		self.remaider = remaider
+		self.remainder = remainder
 
 def error(nb):
 	if nb >= 3 or nb <= 0:
@@ -32,22 +32,12 @@ def product(a, b):
 def quotient(a, b):
 	return ;
 
-def remaider(a, b):
+def remainder(a, b):
 	return ;
 
 def operations(a, b):
-
 	return ;
 
-
-if len(sys.argv) <= 1:
-	print(error(0))
-	exit()
-elif len(sys.argv) >= 4:
-	print(error(1))
-	exit()
-if str(sys.argv[1]) or str(sys.argv[2]):
-	print(error(2))
-	exit()
-else:
-	operations(sys.argv[1], sys.argv[2])
+test = int(sys.argv[1])
+print(type(test))
+print(test)
