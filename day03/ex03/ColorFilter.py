@@ -56,7 +56,6 @@ class ColorFilter:
 if __name__ == '__main__':
 	imp = ImageProcessor()
 	arr = imp.load("../ressources/42AI.png")
-	print(f"type of arr: {arr.dtype}")
 	cf = ColorFilter()
 	#invert_arr = cf.invert(arr)
 	#imp.display(invert_arr)
