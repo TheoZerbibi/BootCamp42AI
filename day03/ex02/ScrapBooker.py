@@ -21,7 +21,6 @@ class ScrapBooker:
 		dimension = np.array(dimensions)
 		position = np.array(positions)
 		s = np.array(array.shape)[:2]
-		print(s)
 		if (position > s).any() or (dimension > s).any() or (dimension < position[0]).any() or (dimension < position[1]).any() or (dimension <= 1).any():
 			raise BaseException(f"The positions {position} + dimensions {dimensions} are greater than the image's dimensions {array.shape[0:2]}")
 		return array[position[0]:dimension[0], position[1]:dimension[1]]
@@ -61,5 +60,5 @@ if __name__ == '__main__':
 	#three_times = sb.juxtapose(arr, 5)
 	#print(f"shape of juxtapose: {three_times.shape}")
 	#imp.display(three_times)
-	mosaic = sb.mosaic(arr, (10, 5))
-	imp.display(mosaic)
+	#mosaic = sb.mosaic(arr, (10, 5))
+	#imp.display(mosaic)
