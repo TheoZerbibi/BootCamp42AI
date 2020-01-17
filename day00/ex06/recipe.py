@@ -110,16 +110,14 @@ def add_recipe_type():
 	if type in types:
 		return type;
 	else:
-		add_recipe_type()
+		return add_recipe_type()
 	return type;
 
 def add_recipe_time():
 	time = input("Enter cooking time for recipe\n>> ")
-	if len(time) <= 0 or  not time.isnumeric() or int(time) <= 0:
+	if len(time) <= 0 or not time.isnumeric() or int(time) <= 0:
 		print("Not a valid time")
-		add_recipe_time()
-	else:
-		return time;
+		return add_recipe_time()
 	return time;
 
 
