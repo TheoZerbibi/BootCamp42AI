@@ -54,7 +54,7 @@ if __name__ == '__main__':
 
 	sb = ScrapBooker()
 	# dimensions.y , dimensions.x - position.y , position.x
-	#imp.display(sb.crop(arr, (161, 185), positions=(141, 15)))
+	imp.display(sb.crop(arr, (161, 185), positions=(141, 15)))
 	#thinned = sb.thin(arr, n=(199), axis=(1))
 	#print(f"Thinned : {thinned.shape}")
 	#three_times = sb.juxtapose(arr, 5)
